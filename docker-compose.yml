@@ -8,6 +8,7 @@ services:
       - HTTP_PROXY
       - HTTPS_PROXY
       - NO_PROXY
+    command: python src/index.py
     working_dir: /app
     tty: true
     environment:
