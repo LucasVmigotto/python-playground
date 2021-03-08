@@ -79,3 +79,17 @@ print("My phone is %s" %(person["phone"]))
 
 for key, value in person.items():
     print("Attribute: %s --> Key: %s" %(key, value))
+
+# Funções
+## Definição de função
+def greet():
+    print("Hello World")
+
+greet()
+
+### Função com parâmetro
+def greetWithMessage(message = "World"):
+    print("Hello %s" %(message))
+
+greetWithMessage("World")
+greetWithMessage()
