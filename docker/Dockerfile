@@ -7,7 +7,7 @@ RUN chmod +x /usr/bin/gosu
 ENV TZ=America/Sao_Paulo
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-ENV GIST_URL https://gist.githubusercontent.com/LucasVmigotto/850418a9b47757fb3006cdd9be2c29cb/raw/c1aa16865af0d623a5e1319d65acde0070712ba5/entrypoint-python.sh
+ENV GIST_URL https://gist.githubusercontent.com/LucasVmigotto/850418a9b47757fb3006cdd9be2c29cb/raw/87d1c9e5e416171dc7f2f8178bed2e70d9c78e7c/entrypoint-python.sh
 RUN curl -sS $GIST_URL > /usr/bin/entrypoint.sh
 RUN chmod +x /usr/bin/entrypoint.sh
 
